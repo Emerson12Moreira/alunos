@@ -1,0 +1,17 @@
+<header class="sticky top-0 z-50 bg-blue-900 shadow-md  px-1 py-1 flex justify-between items-center">
+    <app-selection-turma class="mb-2" (newTurmaValue)="getTurma($event)"></app-selection-turma>
+    <button mat-raised-button color='warn' (click)="auth.logout()">Sair</button>
+</header>
+<div class="container">
+    <div *ngIf="auth.user.emailVerified; else novalidemail">
+        <div class="container">
+            <div>
+                <app-lista [alunos]="alunos"></app-lista>
+            </div>
+        </div>
+        <!-- <button mat-button (click)="ds.fillDatabase()">Fill</button> -->
+    </div>
+    <ng-template #novalidemail>
+        <p>O email utilizado não está verificado.</p>
+    </ng-template>
+</div>

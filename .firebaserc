@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "base-data-27d9e": {
+      "hosting": {
+        "alunos": [
+          "base-data-27d9e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "base-data-27d9e"
+  }
+}

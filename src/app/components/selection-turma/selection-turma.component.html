@@ -1,0 +1,8 @@
+<mat-form-field color="accent" class="text-gray-800 h-7" appearance="fill">
+  <mat-label>Turma</mat-label>
+  <mat-select (selectionChange)="setNewValue($event.value)">
+    <mat-option *ngFor="let turma of turmas" [value]="turma.value">
+      {{turma.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

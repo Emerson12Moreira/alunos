@@ -1,0 +1,19 @@
+<div class="container">
+    <div>
+        <div>
+        <table class="border">
+            <thead class="border">
+                <th class="border border-green-600 w-12">id</th>
+                <th class="border border-green-600 w-12">Nº</th>
+                <th class="border border-green-600 w-96">Nome</th>
+                <th class="border border-green-600 w-12">Turma</th>
+            </thead>
+            <tr class="border" *ngFor="let aluno of alunos">
+                <td class="border border-indigo-400">{{aluno.id}}</td>
+                <td class="border border-indigo-400">{{aluno.numero}}</td>
+                <td class="border border-indigo-400">{{aluno.nome}}</td>
+                <td class="border border-indigo-400">{{aluno.turma}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
